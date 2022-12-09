@@ -1,7 +1,21 @@
 \section{The problem}
-The main goal of this project is to produce an affordable device able to output braille text without requiring any input other than the original English text.
+Most reading devices for the blind, utilise sound output to convey the message to the reader.
+However, this inhibits the individual's ability to hear their environment which is crucial when considering the reliance on sound and touch to get information about their surroundings.
+Additionally, these devices are of no use for people suffering from deafblindness.
 
-\subsection{Audience}
+Although there are some devices in the market (figure \ref{fig:braille-readers-examples}) that allow the output of text in Braille form, they are expensive, ranging from GBP 1000 to GBP 5000, making them inacessible. Efforts have been made to produce more economical solutions and a variety of technologies have been utilised, however none of the many prototypes produced have reached the market.
+
+This project aims to produce an affordable device to read and produce braille at home level.
+By utilizing cheap electronics, such as off-the-shelf microcontrollers and push-pull solenoids, and using cheap manufacturing techniques to produce the casing and inner parts of the device, the cost can be kept reasonable for the customer.
+Focus is placed on the device being suitable for both blind and deafblind individuals, and by using Braille instead of sound, there is an added privacy benefit to the user.
+\begin{figure}[h]
+\centering
+    \includegraphics[width=0.7\textwidth]{figures/braille-readers-examples.jpg}
+\caption{Different Braille generating devices. Prince range: GBP 1,637 (top left) to GBP 4,995 (bottom left)}
+\label{fig:braille-readers-examples}
+\end{figure}
+
+\subsection{Stakeholders}
 There are a variety of stakeholders that will benefit from such a device.
 Firstly, people with visual impairment.
 The design introduces a new and convenient way to read text allowing them to become more independent.
@@ -13,6 +27,8 @@ It provides them with a way to communicate in writing with their loved one witho
 
 The solution will provide small businesses the opportunity to become more inclusive without requiring big financial investments.
 Ultimately, organisations such as the RNIB will be able to provide more tools that allow members to have a more normal and independent life.
+
+It's worth mentioning we aim to compete with an existing industry of commercial braille embossing, who may try to inhibit the development and growth of such a braille printing/reading device.
 
 \subsection{Objectives and criteria}
 In order to keep costs low, cheap microcontrollers and manufacturing techniques are going to be utilised.
@@ -37,5 +53,3 @@ For that reason, we are allowing some room for on-the-fly adjustment in the desi
 While we aim to include complicated capability, such as image-to-text conversion, we acknowledge the limited time and budget of the project, which may result in the development of only a proof of concept.
 
 Training is expected to be provided to the user to ensure the correct usage and to allow for troubleshooting of simple operational issues (e.g. a printer having a paper jam).
-
-It's worth mentioning we aim to compete with an existing industry of commercial braille embossing, who may try to inhibit the development and growth of such a braille printing/reading device.
