@@ -2,19 +2,19 @@
 A lot to be critical about this design, e.g. it doesn't really account for how braille is read and the convenience of keeping one's fingers in place. It is essentially a braille version of a sighted product.
 \begin{figure}[h]
 \centering
-    \includegraphics[width=0.3\textwidth]{figures/e-reader.png}
-\caption{}
+    \includegraphics[width=0.4\textwidth]{figures/e-reader.png}
+\caption[Envisioned finished product]{Envisioned finished product. A Braille version of a standard e-reader aimed to provide broadened access and display information a traditional Braille device can't.}
 \label{fig:e-reader.png}
 \end{figure}
 
-\subsection{Encoding}
-Figure \ref{fig:encoding.png} describes the initial approach to convert text into braille given a device with 16 addressable cells.
-\begin{figure}[h]
-\centering
-    \includegraphics[height=5cm]{figures/encoding.png}
-\caption{Early idea for serial encoding of up to 16 braille cells.}
-\label{fig:encoding.png}
-\end{figure}
+% \subsection{Encoding}
+% Figure \ref{fig:encoding.png} describes the initial approach to convert text into braille given a device with 16 addressable cells.
+% \begin{figure}[h]
+% \centering
+%     \includegraphics[height=5cm]{figures/encoding.png}
+% \caption{Early idea for serial encoding of up to 16 braille cells.}
+% \label{fig:encoding.png}
+% \end{figure}
 
 \section{Actuator technology}
     \subsection{Addressable cell}
@@ -22,18 +22,16 @@ Figure \ref{fig:encoding.png} describes the initial approach to convert text int
     \begin{figure}[h]
     \centering
         \includegraphics[height=5cm]{figures/IBM_Selectric_Globe_Wiki.jpg}
-    \caption{IBM Selectric typing element \cite{wiki:IBMSelectric}.}
+    \caption[IBM Selectric typing element]{IBM Selectric typing element \cite{wiki:IBMSelectric}.}
     \label{fig:IBM_Selectric_Globe_Wiki.jpg}
     \end{figure}
 
-    \subsection{Hybrid addressable cell}
-    As shown in figure \ref{fig:rotation.png} the characters fall partially into a slot, which means they are depressed on the surface. Each rotating disk is a saggital half of the braille cell, i.e. two disks form one braille cell.
+    An alternative that addresses the size is shown in figure \ref{fig:rotation.png}, wherein the characters fall partially into a slot, resulting in their depression on the surface. Each rotating disk is a saggital half of the braille cell, i.e. two disks form one braille cell. Roberts et al explore similar ideas \cite{roberts_492_2000}, and faced issues with component wear and the mechanism jamming.
 
-    Requires the production of either two distinct rotating disks or a spacer between each pair of disks. Unclear how the characters are able to leave the slot once depressed.
     \begin{figure}[h]
     \centering
         \includegraphics[width=0.6\textwidth]{figures/rotation.png}
-    \caption{}
+    \caption{Hybrid addressable cell. Holes on the disk define which pins are depressed on the surface.}
     \label{fig:rotation.png}
     \end{figure}
 
