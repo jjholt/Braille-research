@@ -5,11 +5,17 @@ Those challenges can be split into two categories, technical and non-technical
 \subsection{Technical Challenges}
 Starting with the technical challenges, braille letter spacing is really short allowing only for restricted room between the pins.
 This means that the mechanism chosen for controlling the pins as well as the design itself must be compact and take as limited space as possible.
-A possible solution for this problem would be using the vertical space as long as the horizontal, potentially stacking components on top of each other to save space.
+A possible solution for this problem would be using the vertical space as long as the horizontal, potentially stacking components on top of each other to save space. The exact dimension of braille letter according to the UK standard can be seen in figure \ref{fig:BrailleTable} (add reference).
+\begin{figure}[h]
+\centering
+    \includegraphics[width=\textwidth]{figures/BrailleDistance Table.jpg}
+\caption[Braille Distances Table]{Dimensions of Braille Characters according to UK Standards.}
+\label{fig:BrailleTable}
+\end{figure}
 
-Additionally, the final device must be able to provide an acceptable refresh rate for the letters so that the reading experience for the users is as smooth as possible without any disruptions for loading time.
+Additionally, the final device must be able to provide an acceptable refresh rate for the letters so that the reading experience for the users is as smooth as possible without any disruptions for loading time. Given that the average braille reader is able of reading 120-150 words per minute or approximately 7.5 characters per ssecond (reference number 2), each letter should be able to refresh in 0.13 seconds approximately
 A potential get-around for this issue would be to for the device to be able to generate more than one letter at a time in a horizontal line.
-By allowing each letter to be controlled independently, the letters can change progressively as the reader moves to the next letter allowing this way for little to no downtime.
+By allowing each letter to be controlled independently, the letters can change progressively as the reader moves to the next letter allowing this way for little to no downtime and providing us with more time for refreshing the previous letters. Even just using two letters effectively doubles the available time for refresh of each individual character.
  
 
 \subsection{Non-Technical Challenges}
