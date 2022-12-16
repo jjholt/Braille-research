@@ -1,9 +1,9 @@
 Most of the braille display products available in the market right now, such as those sold by HumanWare and RNIB, are based on piezoelectric bimorph benders or relay-lever mechanisms.  
 
 The biomorph benders mechanism, shown in figure \ref{fig:piezo-bender} produces vibrations that move the pin up and down when placed in an electric field.
-In relay-lever mechanisms, shown in figure \ref{fig:piezo-relay}, when voltage is supplied, the relay pushes the pin up. When the power is off, the weight of the lever mechanism moves the pin downwards to its original position. \cite{hernandez_characterization_2009}.
+In relay-lever mechanisms, shown in figure \ref{fig:piezo-relay}, when voltage is supplied, the relay pushes the pin up. When the power is off, the weight of the lever mechanism moves the pin downwards to its original position \cite{hernandez_characterization_2009}.
 
-\begin{figure} \centering
+\begin{figure}[ht] \centering
     \begin{subfigure}[b]{0.4\textwidth}\centering
         \includegraphics[height=3cm]{figures/piezo-bender-a.png}
         \caption{}
@@ -24,9 +24,9 @@ The main drawback of these two popular mechanisms is that the functional modules
 Another recently developed mechanism is piezoelectric ultrasonic motor \cite{hernandez_characterization_2009}.
 The ultrasonic linear motor consists of a shaft, a mobile element or slider, and a piezoelectric ceramic disk as shown in figure \ref{fig:piezo-miniature}.
 The key advantage of this design is the ultra-light weight of this miniature motor.
-However, the need for several layers, as shown in figure \ref{fig:piezo-full-design}, does not befit the density required by a 2D tactile display.
+However, the need for several layers, as exemplified by figure \ref{fig:piezo-full-design}, does not befit the density required by a 2D tactile display.
 
-\begin{figure}[h] \centering
+\begin{figure}[ht] \centering
     \begin{subfigure}[b]{0.45\textwidth}\centering
         \includegraphics[height=5cm]{figures/piezo-miniature-a.png}
         \caption{}
@@ -41,7 +41,9 @@ However, the need for several layers, as shown in figure \ref{fig:piezo-full-des
 \label{fig:piezo-miniature}
 \end{figure}
 
-\begin{figure}\centering
+\todo[inline]{Add to caption: What is the value?}
+
+\begin{figure}[ht]\centering
     \begin{subfigure}[b]{0.45\textwidth}\centering
         \includegraphics[height=5cm]{figures/piezo-full-design-a.png}
         \caption{}
@@ -50,6 +52,6 @@ However, the need for several layers, as shown in figure \ref{fig:piezo-full-des
         \includegraphics[height=4cm]{figures/piezo-full-design-b.png}
         \caption{}
     \end{subfigure}
-\caption{}
+\caption[Piezoelectric mechanism in-situ]{Piezoelectric mechanism in-situ. The requirement of several layers to create one cell makes it unviable for the density required by a 2D display.}
 \label{fig:piezo-full-design}
 \end{figure}
