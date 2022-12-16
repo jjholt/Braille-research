@@ -7,6 +7,23 @@ Analysis of the processes to build the device highlighted several hazards that c
 
 More analytically, all the errors examined along with their corresponding risk priority score are briefly described in tables \ref{tb:FMEA-parts} and \ref{tb:FMEA-assembly}, and in their integrity in Appendix B.
 
+\begin{table}[ht]\rowcolors{2}{gray!25}{white}
+    \centering
+    \begin{tabular}{b{1.7cm} b{1.5cm} b{2cm} b{3.5cm} l b{4.2cm}}
+        % \rowcolor{gray!40}
+        \textbf{Category} & \textbf{Part name} & \textbf{Failure Mode} & \textbf{Mechanism and Cause of failure} & \textbf{PRA} & \textbf{Recommended Corrective Action} \\ \hline
+        Machinery & Soldering iron & overheats & faulty device & 9 & buy new soldering iron  \\ 
+        Machinery & 3D printer  & miss-threads plastic & tangled thread & 4 & stop printing process and re-thread plastic \\ 
+        Machinery & Wire cutters  & Misuse & slippage  & 4 & Take care when using \\ 
+        Machinery & Laser cutter & cuts incorrectly & plastic not aligned correctly & 4 & check plastic sheet is aligned  \\ 
+        Machinery & Drill & wrong size hole is drilled & wrong drill head used/ miscalibrated  & 2 & recalibrate drill/ swap drill head \\ 
+        Assembly & Magnetic shielding & Surrounding pins moving & Misplacement or damage during assembly & 15 & Inspection and QA after assembly \\ 
+        Assembly & PCB & Signal loss & Scratched leads during assembly & 10 & ~\\ \hline
+    \end{tabular}
+    \caption[]{Summary of FMEA for the assembly process}
+    \label{tb:FMEA-assembly}
+\end{table}
+
 \newgeometry{left=0.3cm,right=0.3cm}
     \begin{table}[!ht] \rowcolors{2}{gray!25}{white}
         \centering
@@ -34,23 +51,6 @@ More analytically, all the errors examined along with their corresponding risk p
         \end{tabular}
         \caption{Summary of FMEA for individual parts that compose the device}
         \label{tb:FMEA-parts}
-    \end{table}
-    \clearpage
-    \begin{table}\rowcolors{2}{gray!25}{white}
-        \centering
-        \begin{tabular}{b{1.7cm} b{2cm} b{2.5cm} b{4cm}l b{6cm}}
-            % \rowcolor{gray!40}
-            \textbf{Category} & \textbf{Part name} & \textbf{Failure Mode} & \textbf{Mechanism \& Cause of failure} & \textbf{PRA} & \textbf{Recommended Corrective Action} \\ \hline
-            Machinery & Soldering iron & overheats & faulty device & 9 & buy new soldering iron  \\ 
-            Machinery & 3D printer  & miss-threads plastic & tangled thread & 4 & stop printing process and re-thread plastic \\ 
-            Machinery & Wire cutters  & misused & slippage  & 4 & take care when using \\ 
-            Machinery & Laser cutter & cuts incorrectly & plastic not aligned correctly & 4 & check plastic sheet is aligned  \\ 
-            Machinery & Drill & wrong size hole is drilled & wrong drill head used/ miscalibrated  & 2 & recalibrate drill/ swap drill head \\ 
-            Assembly & Magnetic shielding & Surrounding pins moving & Misplacement or damage during assembly & 15 & Inspection and QA after assembly \\ 
-            Assembly & PCB & Signal loss & Scratched leads during assembly & 10 & ~\\ \hline
-        \end{tabular}
-        \caption[]{Summary of FMEA for the assembly process}
-        \label{tb:FMEA-assembly}
     \end{table}
 \restoregeometry
 
