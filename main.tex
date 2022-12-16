@@ -32,8 +32,7 @@
 		bibliography/Technologies%
 	}
 \clearpage
-	\section{Appendix A --- Ethics form} \label{sec:appendix-ethics}
-		\includepdf[]{ethics-form}
-	\section[]{Appendix B - FMEA} \label{sec:appendix-FMEA}
-		\includepdf[pages={1-2},angle=-90]{fmea.pdf}
+		\includepdf[pagecommand={\section{Appendix A --- Ethics form}}]{ethics-form}
+		\includepdf[pages={1},angle=-90, pagecommand={\section{Appendix B --- FMEA}}]{fmea.pdf}
+      \includepdf[pages={2},angle=-90]{fmea.pdf}
 \end{document}
